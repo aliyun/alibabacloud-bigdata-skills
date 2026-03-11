@@ -77,6 +77,12 @@ If the MCP Server is running, use the MCP `tools/list` capability, or fetch `htt
 
 ## Calling APIs via SDK
 
+**Recommend using the latest SDK version.** The DataWorks SDK is updated frequently with new APIs, bug fixes, and model changes. Check the latest version from the package registry before installing:
+
+- Node.js: `https://www.npmjs.com/package/@alicloud/dataworks-public20240518`
+- Python: `https://pypi.org/project/alibabacloud-dataworks-public20240518/`
+- Java: `https://central.sonatype.com/artifact/com.aliyun/alibabacloud-dataworks_public20240518`
+
 Prefer the official Alibaba Cloud SDK. Two styles are supported:
 
 ### Style 1: Generalized call (recommended, covers all APIs)
