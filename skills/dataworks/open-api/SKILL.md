@@ -31,8 +31,8 @@ If execution fails at any step, escalate to the next level:
 
 ## Credentials priority (must follow)
 
-1. Credentials URI: `ALIBABA_CLOUD_CREDENTIALS_URI` (e.g. `http://localhost:7002/api/v1/credentials/0`). When set, fetch AK/SK/STS token from this endpoint instead of static env vars.
-2. Environment variables: `ALIBABA_CLOUD_ACCESS_KEY_ID` / `ALIBABA_CLOUD_ACCESS_KEY_SECRET` / `ALIBABA_CLOUD_REGION_ID`
+1. Environment variables: `ALIBABA_CLOUD_ACCESS_KEY_ID` / `ALIBABA_CLOUD_ACCESS_KEY_SECRET` / `ALIBABA_CLOUD_REGION_ID`
+2. Credentials URI: `ALIBABA_CLOUD_CREDENTIALS_URI` (e.g. `http://localhost:7002/api/v1/credentials/0`). When set, fetch AK/SK/STS token from this endpoint instead of static env vars.
 3. Shared config file: `~/.alibabacloud/credentials`
 
 Region policy: `ALIBABA_CLOUD_REGION_ID` is an optional default. If unset, decide the most reasonable region for the task; if unclear, ask the user.
