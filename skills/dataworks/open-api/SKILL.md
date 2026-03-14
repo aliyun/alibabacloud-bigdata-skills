@@ -19,6 +19,7 @@ Use Alibaba Cloud OpenAPI (RPC) with official SDKs or OpenAPI Explorer to manage
 If execution fails at any step, escalate to the next level:
 
 1. **Official help docs** — read the API overview and per-API doc pages first.
+   - If creating SQL nodes via the new data development APIs (`CreateNode`) fails, refer to the CreateNode API doc for parameter details and error codes: `https://help.aliyun.com/zh/dataworks/developer-reference/api-dataworks-public-2024-05-18-createnode`
 2. **OpenAPI metadata** — fetch the raw JSON spec for exact parameter names, types, and required fields.
 3. **SDK API docs** — check the typed SDK reference for correct method signatures and request classes.
 
