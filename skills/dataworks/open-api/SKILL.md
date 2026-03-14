@@ -1,6 +1,21 @@
 ---
 name: dataworks-open-api
 description: Operate Alibaba Cloud DataWorks through dynamic API discovery and official SDKs (Node.js, Python, Java). Covers data development, workflow operations, data integration, data quality, metadata lineage, workspace management, and more. APIs are discovered at runtime from official docs and OpenAPI metadata — no hardcoded list.
+source: https://github.com/aliyun/alibabacloud-bigdata-skills
+homepage: https://github.com/aliyun/alibabacloud-bigdata-skills/tree/main/skills/dataworks/open-api
+env:
+  - name: ALIBABA_CLOUD_ACCESS_KEY_ID
+    description: Alibaba Cloud Access Key ID (required unless using credentials URI or shared config)
+    required: false
+  - name: ALIBABA_CLOUD_ACCESS_KEY_SECRET
+    description: Alibaba Cloud Access Key Secret (required unless using credentials URI or shared config)
+    required: false
+  - name: ALIBABA_CLOUD_REGION_ID
+    description: Target region (e.g. cn-shanghai, cn-beijing). Optional; skill will prompt if unset.
+    required: false
+  - name: ALIBABA_CLOUD_CREDENTIALS_URI
+    description: HTTP endpoint for dynamic AK/SK/STS token (alternative to explicit AK/SK)
+    required: false
 ---
 
 # DataWorks (dataworks-public)
