@@ -33,20 +33,21 @@ Use Alibaba Cloud OpenAPI (RPC) with official SDKs or OpenAPI Explorer to manage
 
 If execution fails at any step, escalate to the next level:
 
-1. **Official help docs** — read the API overview and per-API doc pages first.
+1. **Cookbook** — check `references/cookbook.md` first. It contains verified API patterns, pitfalls, error recovery, the full end-to-end lifecycle (Create → Submit → Deploy → Run → Monitor), and reusable code snippets. Most common issues are already documented there.
+2. **Official help docs** — read the API overview and per-API doc pages.
    - If an API call fails or the request/error is not understood, fetch the API directory page to locate the relevant API documentation:
      `https://help.aliyun.com/zh/dataworks/developer-reference/api-dataworks-public-2024-05-18-dir`
      Browse the category list, find the matching API name, and navigate to its detail page (URL pattern: `https://help.aliyun.com/zh/dataworks/developer-reference/api-dataworks-public-2024-05-18-{apinameincamelcase}`) for parameter details, error codes, and usage examples.
      For example, if `CreateNode` fails, find it under "数据开发（新版）" in the directory, then read its detail page: `https://help.aliyun.com/zh/dataworks/developer-reference/api-dataworks-public-2024-05-18-createnode`
-2. **OpenAPI metadata** — fetch the raw JSON spec for exact parameter names, types, and required fields.
-3. **SDK API docs** — check the typed SDK reference for correct method signatures and request classes.
+3. **OpenAPI metadata** — fetch the raw JSON spec for exact parameter names, types, and required fields.
+4. **SDK API docs** — check the typed SDK reference for correct method signatures and request classes.
 
 - Java: `https://aliyunsdk-pages.alicdn.com/apidocs/{PRODUCT_CODE}/{API_VERSION}/java-async-tea/8.0.3/index.html`
 - Node.js / Python: see `references/sources.md`
 
-4. **GitHub source code** — read the Java SDK source for model/request class definitions: `https://github.com/aliyun/alibabacloud-java-sdk/tree/master/dataworks-public-20240518` (browse `src/main/java/com/aliyun/dataworks_public20240518/` for request/response models).
-5. **MCP Server** — use the MCP Server to call APIs directly (see `references/mcp_server.md`).
-6. **Browser** — use browser-use to visit the DataWorks Homepage (`https://dataworks.data.aliyun.com/${ALIBABA_CLOUD_REGION_ID}/#/index`) and inspect the UI behavior, network requests, or page content for clues.
+5. **GitHub source code** — read the Java SDK source for model/request class definitions: `https://github.com/aliyun/alibabacloud-java-sdk/tree/master/dataworks-public-20240518` (browse `src/main/java/com/aliyun/dataworks_public20240518/` for request/response models).
+6. **MCP Server** — use the MCP Server to call APIs directly (see `references/mcp_server.md`).
+7. **Browser** — use browser-use to visit the DataWorks Homepage (`https://dataworks.data.aliyun.com/${ALIBABA_CLOUD_REGION_ID}/#/index`) and inspect the UI behavior, network requests, or page content for clues.
 
 ## Credentials priority (must follow)
 
@@ -292,5 +293,6 @@ DataWorks APIs use millisecond timestamps. Convert between human-readable dates 
 
 ## References
 
+- **Cookbook (verified patterns & pitfalls)**: `references/cookbook.md` — FlowSpec structure for CreateNode, submit-and-deploy flow, data quality rules, bizdate format, response parsing, and FAQ from real-world usage.
 - MCP Server integration: `references/mcp_server.md`
 - Sources: `references/sources.md`

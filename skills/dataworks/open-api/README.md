@@ -7,11 +7,13 @@ Alibaba Cloud DataWorks skill for AI agents. Manage data development, workflow o
 ```
 dataworks-open-api/
 ├── SKILL.md                          # Main skill instructions (read by AI agent)
+├── README.md                         # This file — quick start & overview
 ├── agents/
 │   └── openai.yaml                   # Agent interface definition
 ├── references/
+│   ├── cookbook.md                    # Verified API patterns, pitfalls, end-to-end lifecycle, recipes & FAQ
 │   ├── sources.md                    # API docs, SDK, and MCP Server links
-│   └── mcp_server.md                 # MCP Server setup and configuration
+│   └── mcp_server.md                # MCP Server setup and configuration
 └── scripts/
     ├── fetch_api_overview.py         # Fetch API list from official help docs
     └── list_openapi_meta_apis.py     # Fetch API specs from OpenAPI metadata
@@ -46,12 +48,13 @@ python scripts/list_openapi_meta_apis.py
 
 When execution fails, escalate in this order:
 
-1. Official help docs
-2. OpenAPI metadata (raw JSON spec)
-3. SDK API docs
-4. GitHub SDK source code
-5. MCP Server
-6. Browser (DataWorks Homepage)
+1. **Cookbook** (`references/cookbook.md`) — verified patterns, pitfalls & error recovery
+2. Official help docs
+3. OpenAPI metadata (raw JSON spec)
+4. SDK API docs
+5. GitHub SDK source code
+6. MCP Server
+7. Browser (DataWorks Homepage)
 
 See `SKILL.md` for full details on each level.
 
